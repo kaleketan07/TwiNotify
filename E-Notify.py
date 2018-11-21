@@ -403,8 +403,8 @@ from twilio.rest import Client
 
 
 app = Flask(__name__)
-account_sid = 'AC927ba002034f4ef9fe90661ee1afce67'
-auth_token = '0e549ab8532e6836eae8692d26eb5e3b'
+account_sid = 'AC927ba002034f4ef9feXXXXXXXXXXXXXX'
+auth_token = '0e549ab8532e6836eaXXXXXXXXXXXXXX'
 client = Client(account_sid, auth_token)
 
 
@@ -420,7 +420,7 @@ def sms_ahoy_reply():
     # Add a message
     global message_tweets
     resp.message(message_tweets)
-    tmp = ['+18578694005', '+18575448237', '+19789303476']
+    tmp = ['+185XXXXXXXX', '+18XXXXXXXXX', '+197XXXXXXXX']
     for i in tmp:
         message = client.messages                 .create(
                      body=message_tweets,
